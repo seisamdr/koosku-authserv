@@ -20,6 +20,10 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
-  }
+    "noFallthroughCasesInSwitch": false,
+    "types": ["node", "multer"],
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["src/**/*", "src/types/multer-expres.d.ts", "test"],
+  "exclude": ["node_modules", "dist"]
 }
